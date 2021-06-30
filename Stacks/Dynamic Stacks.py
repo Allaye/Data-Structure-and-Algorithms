@@ -57,3 +57,5 @@ class Stack():
         '''
         return self.items.clear()
     
+    def __str__(self):
+        return self.size()
