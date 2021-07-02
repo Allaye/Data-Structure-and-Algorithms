@@ -67,4 +67,11 @@ def double_balance(string, openings=['[', '{', '(']):
                     return False
         return s.size() == 0
     else:
+<<<<<<< HEAD
         return False
+=======
+        return False
+
+
+
+>>>>>>> 34dd19a4c05ecb4cd984fb078a578c1934859c39
