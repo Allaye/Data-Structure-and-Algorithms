@@ -70,20 +70,4 @@ def double_balance(string, openings=['[', '{', '(']):
         return False
 
 
-# In[3]:
-
-
-string = '[](){([[[]]])}'
-
-
-# In[4]:
-
-
-double_balance(string)
-
-
-# In[ ]:
-
-
-
 
