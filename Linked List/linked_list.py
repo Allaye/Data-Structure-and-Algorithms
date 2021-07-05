@@ -52,6 +52,19 @@ class LinkedList:
             raise IndexError(f'Index out of range, linked list is of length {self.length()}')
         return self.display()[index]
         
-    def delete(self, index):
-        pass
+    def erase(self, index):
+        '''
+        delete element from the linked list based on the index provided.
+        '''
+        if(index >= self.length()):
+            raise IndexError(f'Index out of range, linked list is of length {self.length()}')
+        cur_index = 0
+        cur = self.head
+        while(True):
+            temp = cur
+            cur = cur.next
+            if(cur_index == index):
+                temp.next = cur.next
+                return
+            cur_index +=1
 
