@@ -25,6 +25,9 @@ class LinkedList:
         self.head = Node()
         
     def append(self, data):
+        '''
+        add new item to the linked list
+        '''
         new_node = Node(data)
         cur = self.head
         while cur.next != None:
@@ -32,6 +35,9 @@ class LinkedList:
         cur.next = new_node
     
     def length(self):
+        '''
+        return the length of the linked list
+        '''
         length = 0
         cur = self.head
         while cur.next != None:
@@ -39,15 +45,21 @@ class LinkedList:
             cur = cur.next
         return length
     
-    def display(self):
+    def display(self, display='P'):
+        '''
+        display or return all the element in the linked list based on the argument provided, default is to print
+        '''
         emum, cur = [], self.head
         while cur.next !=None:
             cur = cur.next
             emum.append(cur.data)
-        print(emum)
-        return emum
+        if(display=='P'): print(emum)
+        else: return emum
     
     def get(self, index):
+        '''
+        return a linked list value based on the index provided
+        '''
         if index >=self.length():
             raise IndexError(f'Index out of range, linked list is of length {self.length()}')
         return self.display()[index]
