@@ -21,6 +21,9 @@ class DoublyLinkedList:
         self.head = Node()
         
     def append(self, data):
+        '''
+        add element at the end of the linked list
+        '''
         new_node = Node(data)
         if(self.head.data is None):
             self.head = new_node
