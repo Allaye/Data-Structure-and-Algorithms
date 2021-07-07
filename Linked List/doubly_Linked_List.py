@@ -46,6 +46,9 @@ class DoublyLinkedList:
         pass
     
     def length(self):
+        '''
+        get the length of the linked list
+        '''
         if(self.head.data is None):
             print(f'Liked List is Empty')
             return
@@ -57,6 +60,9 @@ class DoublyLinkedList:
         return len(enum)
     
     def display(self, display='P'):
+        '''
+        display or return the element in the linked list, by default print the elements else return the element in a list
+        '''
         if(self.head.data is None):
             print(f'Linked List is empty')
             return None
@@ -70,7 +76,7 @@ class DoublyLinkedList:
     
     def get(self, index):
         '''
-        get the element inside the linked list with the index provided, raise error if not appr
+        get the element inside the linked list with the index provided, raise error if not appropriote index
         '''
         if(index >= self.length()):
             raise IndexError(f'Index provided is out of range of {self.length()}')
