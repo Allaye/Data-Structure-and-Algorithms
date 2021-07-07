@@ -33,6 +33,9 @@ class DoublyLinkedList:
         cur.next = new_node
     
     def prepend(self, data):
+        '''
+        add element in the front or the head of the linked list
+        '''
         new_node = Node(data)
         if(self.head.data is None):
             self.head = new_node
