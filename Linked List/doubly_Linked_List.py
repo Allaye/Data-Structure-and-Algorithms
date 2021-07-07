@@ -69,6 +69,9 @@ class DoublyLinkedList:
         else: return enum
     
     def get(self, index):
+        '''
+        get the element inside the linked list with the index provided, raise error if not appr
+        '''
         if(index >= self.length()):
             raise IndexError(f'Index provided is out of range of {self.length()}')
             return
