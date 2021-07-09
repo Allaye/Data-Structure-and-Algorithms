@@ -18,6 +18,7 @@ class Node:
 class DoublyLinkedList:
     
     def __init__(self):
+        
         self.head = Node()
         
     def append(self, data):
