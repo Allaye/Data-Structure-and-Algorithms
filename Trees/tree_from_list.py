@@ -19,9 +19,6 @@ def binary_tree(r):
     return [r, [], []]
 
 
-# In[9]:
-
-
 def insert_left(root, newbranch):
     '''
     a function to insert new brach to the tree left part
@@ -35,11 +32,8 @@ def insert_left(root, newbranch):
     return root
     
 
-
-# In[10]:
-
-
 def insert_right(root, newbranch):
+
     target_node = root.pop(2)
     
     if (len(target_node) > 1):
@@ -48,31 +42,27 @@ def insert_right(root, newbranch):
         root.insert(2, [newbranch, [], []])
 
 
-# In[11]:
-
-
 def getroot(tree):
+    
     return tree[0]
-
-
-# In[13]:
 
 
 def set_root_value(tree, value):
+  
     tree[0] = value
     return tree[0]
 
-
-# In[14]:
-
-
 def get_left_value(tree):
+    '''
+    return the whole left node of the tree 
+    '''
     return tree[1]
 
 
-# In[15]:
-
 
 def get_right_value(tree):
+    '''
+    return the whole right node of the tree
+    '''
     return tree[2]
 
