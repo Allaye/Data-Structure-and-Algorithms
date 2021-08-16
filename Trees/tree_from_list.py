@@ -48,7 +48,9 @@ def getroot(tree):
 
 
 def set_root_value(tree, value):
-  
+    '''
+    assign a new value to the root of the tree
+    '''
     tree[0] = value
     return tree[0]
 
