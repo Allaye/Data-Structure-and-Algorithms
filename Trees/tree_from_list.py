@@ -33,7 +33,9 @@ def insert_left(root, newbranch):
     
 
 def insert_right(root, newbranch):
-
+    '''
+    insert a newbranch to the right of the tree
+    '''
     target_node = root.pop(2)
     
     if (len(target_node) > 1):
