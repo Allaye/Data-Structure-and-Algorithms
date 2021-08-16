@@ -43,7 +43,9 @@ def insert_right(root, newbranch):
 
 
 def getroot(tree):
-    
+    '''
+    return the root of the tree
+    '''
     return tree[0]
 
 
