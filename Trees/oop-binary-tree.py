@@ -49,6 +49,10 @@ class BinaryTree:
             self.right_node = bt
     
     def get_right_node(self):
+        '''
+        return the values of the right side of the tree, beware, 
+        you will be getting memory addresses most of the time
+        '''
         return self.right_node
     
     def get_left_node(self):
