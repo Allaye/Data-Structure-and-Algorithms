@@ -62,7 +62,10 @@ class BinaryTree:
         '''
         return self.left_node
     
-    def set_node(self, value):
+    def set_root(self, value):
+        '''
+        set the parent root value of the tree
+        '''
         self.root = value
         
     def get_root(self):
