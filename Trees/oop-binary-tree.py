@@ -27,7 +27,9 @@ class BinaryTree:
         self.right_node = None 
     
     def insert_left_node(self, new_node):
-        
+        '''
+        insert new node into the tree, check if the current node is empty or not and proceed
+        '''
         if (self.left_node == None):
             self.left_node = BinaryTree(new_node)
         else:
@@ -36,7 +38,9 @@ class BinaryTree:
             self.left_node = bt
     
     def insert_right_node(self, new_node):
-        
+        '''
+        inser new node to the right side of the tree, check if the node is empty or not and proceed
+        '''
         if (self.right_node == None):
             self.right_node = BinaryTree(new_node)
         else:
