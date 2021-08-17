@@ -13,9 +13,15 @@
 class BinaryTree:
     '''
     basic implementation of binary tree using oop concepts, 
-    we have a root
+    we have a root to start each tree
+    each tree have a left node
+    each tree have a right node
+    
     '''
     def __init__(self, root):
+        '''
+        assign values to the root and both node 
+        '''
         self.root = root
         self.left_node = None
         self.right_node = None 
