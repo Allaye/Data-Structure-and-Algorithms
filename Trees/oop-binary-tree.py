@@ -11,7 +11,10 @@
 
 
 class BinaryTree:
-    
+    '''
+    basic implementation of binary tree using oop concepts, 
+    we have a root
+    '''
     def __init__(self, root):
         self.root = root
         self.left_node = None
@@ -46,11 +49,6 @@ class BinaryTree:
         
     def get_root(self):
         return self.root
-            
-        
-
-
-# In[ ]:
 
 
 
