@@ -69,6 +69,9 @@ class BinaryTree:
         self.root = value
         
     def get_root(self):
+        '''
+        return the root of the root of the tree
+        '''
         return self.root
 
 
