@@ -73,7 +73,14 @@ class BinaryTree:
         return the root of the root of the tree
         '''
         return self.root
-
-
-
+    
+    def preorder(self):
+        
+        print(self.root)
+        if (self.left_node):
+            self.left_node.preorder()
+        elif (self.right_node):
+            self.right_node.preorder()
+    
+        
 
