@@ -85,7 +85,9 @@ class BinaryTree:
             self.right_node.preorder()
             
     def postorder(self):
-        
+        '''
+        postorder tree travesal method implememtation
+        '''
         if (self.left_node):
             self.left_node.postorder()
         elif (self.right_node):
