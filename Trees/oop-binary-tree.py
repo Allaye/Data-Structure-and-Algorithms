@@ -85,7 +85,7 @@ class BinaryTree:
     def postorder(self):
         
         if (self.left_node):
-            #self.left_node.postorder()
+            self.left_node.postorder()
         elif (self.right_node):
             self.right_node.postorder()
         print(self.root)
