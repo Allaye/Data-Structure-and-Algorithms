@@ -94,7 +94,7 @@ class BinaryTree:
         
         if (self.left_node):
             self.left_node.inorder()
-            print(self.get_root())
+            #print(self.get_root())
         else:
             self.right_node.inorder()
             print(self.get_root())
