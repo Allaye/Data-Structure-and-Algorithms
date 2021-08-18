@@ -76,7 +76,7 @@ class BinaryTree:
     
     def preorder(self):
         
-        print(self.root)
+        print(self.get_root())
         if (self.left_node):
             self.left_node.preorder()
         elif (self.right_node):
@@ -88,10 +88,16 @@ class BinaryTree:
             self.left_node.postorder()
         elif (self.right_node):
             self.right_node.postorder()
-        print(self.root)
+        print(self.get_root())
 
     def inorder(self):
         
+        if (self.left_node):
+            self.left_node.inorder()
+            print(self.get_root())
+        else:
+            self.right_node.inorder()
+            print(self.get_root())
         
         
 
