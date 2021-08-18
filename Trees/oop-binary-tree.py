@@ -90,6 +90,8 @@ class BinaryTree:
             self.right_node.postorder()
         print(self.root)
 
-    
+    def inorder(self):
+        
+        
         
 
