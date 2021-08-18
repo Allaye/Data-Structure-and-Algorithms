@@ -83,7 +83,13 @@ class BinaryTree:
             self.right_node.preorder()
             
     def postorder(self):
-        pass
+        
+        if (self.left_node):
+            self.left_node.postorder()
+        elif (self.right_node):
+            self.right_node.postorder()
+        print(self.root)
+
     
         
 
