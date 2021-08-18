@@ -75,7 +75,9 @@ class BinaryTree:
         return self.root
     
     def preorder(self):
-        
+        '''
+        preorder tree travesal implementation
+        '''
         print(self.get_root())
         if (self.left_node):
             self.left_node.preorder()
