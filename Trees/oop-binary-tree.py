@@ -95,7 +95,9 @@ class BinaryTree:
         print(self.get_root())
 
     def inorder(self):
-        
+        '''
+        inorder travesal implementation for tree DS
+        '''
         if (self.left_node):
             self.left_node.inorder()
             print(self.get_root())
